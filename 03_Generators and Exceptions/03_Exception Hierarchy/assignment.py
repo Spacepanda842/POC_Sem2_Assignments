@@ -1,9 +1,13 @@
-number_1 = int(input("Enter a number:"))
-number_2 = int(input("Enter another number:"))
+number1 = 0
+number2 = 0
 try:
-    print(number_1, "Divided by", number_2, "=", int(number_1/number_2))
+    number1 = int(input("Enter a number:"))
+    number2 = int(input("Enter another number:"))
+except ValueError:
+    print("You didn't enter a value..")
+
+
+try:
+    print(number1, "Divided by", number2, "=", number1/number2)
 except ZeroDivisionError:
-    print("Sorry, you divided by zero, that's literally impossible goofy. For example, if you have  and divide it by 10, YOU CAN'T DIVIDE ABSOLUTELY NOTHING, which means the answer is.......Hold up...it's zero💀")
-
-
-
+    print("I can't do that bro, NOT EVEN A QUANTUM COMPUTER CAN DO THAT.....I think....")
