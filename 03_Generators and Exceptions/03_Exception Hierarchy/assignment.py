@@ -5,8 +5,6 @@ try:
     number2 = int(input("Enter another number:"))
 except ValueError:
     print("You didn't enter a value..")
-
-
 try:
     print(number1, "Divided by", number2, "=", number1/number2)
 except ZeroDivisionError:
