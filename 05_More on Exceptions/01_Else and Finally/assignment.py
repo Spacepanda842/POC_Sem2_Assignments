@@ -1,23 +1,19 @@
-#Continue with code from 3.3
-
 number1 = 0
 number2 = 0
 try:
-    number1 = int(input("Enter a number"))
-    # YOUDO.  use input function and int to set number2
+    number1 = int(input("Enter a number:"))
+    number2 = int(input("Enter another number:"))
 except ValueError:
-    # print message stating that an integer wasn't given
-    pass  # YOUDO remove pass when done
+    print("You didn't enter a value..")
 else:
-    print("No value error detected")
+    print("You're good here dude, you entered a value.")
 finally:
-    print("Values taken care of")
-
+    print("The value is taken care of.")
 try:
-    # YOUDO divide number1 / number2 and set to answer
-    # YOUDO  print the result of the division (aka answer with some helper text)
-    pass  # YOUDO remove pass when done
+    print(number1, "Divided by", number2, "=", number1/number2)
 except ZeroDivisionError:
-    # YOUDO:  print message stating that division by zero is not possible.
-    pass  # YOUDO remove pass when done
-#YOUDO:  else and finally here as well.  
+    print("I can't do that bro, NOT EVEN A QUANTUM COMPUTER CAN DO THAT.....I think....")
+else:
+    print("There was no zero, you're good.")
+finally:
+    print("I'm gonna do something bad....something reaaal bad......something.........devious....")
