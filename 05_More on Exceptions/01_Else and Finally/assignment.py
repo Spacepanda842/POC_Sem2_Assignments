@@ -5,6 +5,9 @@ try:
     number2 = int(input("Enter another number:"))
 except ValueError:
     print("You didn't enter a value..")
+
+    print("An input was not correct")
+
 else:
     print("You're good here dude, you entered a value.")
 finally:
