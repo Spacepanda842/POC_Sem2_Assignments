@@ -1,5 +1,8 @@
-#add type annotation on the functions and variables
-#variables types are float, function return type is a float
+def min(a, b):
+    if(a < b):
+        return a
+    else:
+        return b
 
 def average(a, b):
     return (a + b) / 2
