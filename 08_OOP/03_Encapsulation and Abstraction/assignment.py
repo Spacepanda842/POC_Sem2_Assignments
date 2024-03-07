@@ -23,7 +23,16 @@ class Rectangle:
         return 3 * self.__base + 3 * self.__height
 
  
- triangle_1 = Rectangle(5,10)
- print("The area of the rectangle is", get)
-#YOUDO>  create two rectangles.  print their base, height, perimeter, and area
-#using only the methods not the fields/property/attributes
+triangle_1 = Rectangle(5,10)
+print("The base of the rectangle is", triangle_1.get_base())
+print("The height of the rectangle is", triangle_1.get_height())
+print("The perimeter of the rectangle is", triangle_1.get_perimeter())
+print("The area of the rectangle is", triangle_1.get_area())
+
+triangle_2 = Rectangle(1, 6)
+print("The base of the rectangle is", triangle_2.get_base())
+print("The height of the rectangle is", triangle_2.get_height())
+print("The perimeter of the rectangle is", triangle_2.get_perimeter())
+print("The area of the rectangle is", triangle_2.get_area())
+
+
