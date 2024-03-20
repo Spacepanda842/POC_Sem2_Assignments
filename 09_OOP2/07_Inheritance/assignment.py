@@ -29,7 +29,6 @@ class Square(Rectangle):
     def __init__(self, side: float) -> None:
         super().__init__(side, side)
         self.__side = side
-
     def get_side(self) -> float:
         return self.__side
     
