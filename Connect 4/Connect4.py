@@ -126,6 +126,7 @@ def check_row():
     return False
         
 def check_col():
+    first_list = 0
     pass
 
 def check_left_diag():
@@ -190,6 +191,7 @@ def print_intro():
 
 
 screen.bind("<Button-1>", handle_click)
+screen.bind("Button-2>", handle_click)
 
 print_intro()
 
